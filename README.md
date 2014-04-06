@@ -1,3 +1,3 @@
-# Translator Fun API
+# Translate Fun API
 
 coming soon...

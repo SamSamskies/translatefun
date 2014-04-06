@@ -1,2 +1,2 @@
-require './translatorfun'
+require './translatefun'
 run Sinatra::Application

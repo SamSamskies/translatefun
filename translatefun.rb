@@ -8,5 +8,6 @@ before do
 end
 
 get '/pidginenglish' do
-  Dakine.translate params[:q]
+  error = 'Breh, u know how fo read da instructions o wat?'
+  params[:q] ? Dakine.translate(params[:q]) : error
 end

@@ -8,5 +8,5 @@ before do
 end
 
 get '/pidginenglish' do
-  Dakine.translate params[:text]
+  Dakine.translate params[:q]
 end

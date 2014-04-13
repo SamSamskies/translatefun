@@ -7,6 +7,10 @@ before do
   response.headers['Access-Control-Allow-Methods'] = 'GET'
 end
 
+get '/' do
+  'Instructions coming soon. :)'
+end
+
 get '/pidginenglish' do
   if params[:q]
     { text: Dakine.translate(params[:q]) }.to_json

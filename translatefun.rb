@@ -8,7 +8,9 @@ before do
 end
 
 get '/pidginenglish' do
-  error = { error: 'Breh, u know how fo read da instructions o wat?' }.to_json
-  translated_text = { text: Dakine.translate(params[:q]) }.to_json
-  params[:q] ? translated_text : error
+  if params[:q]
+    { text: Dakine.translate(params[:q]) }.to_json
+  else
+    { error: 'Breh, u know how fo read da instructions o wat?' }.to_json
+  end
 end
